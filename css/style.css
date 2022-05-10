@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
+.section {
+  border: 2px solid black;
+  padding: 20px;
+  margin: 5px;
+
+  flex-direction: row;
+  bottom: 5px;
+  width: auto;
+  transition: bottom 0.5s ease-in-out;
+}
+.div {
+  display: flex;
+  flex-wrap: wrap;
+}
+span {
+  border: 1px solid red;
+  padding: 5px;
+  float: right;
+  margin: 0px;
+  background-color: lightskyblue;
+  color: red;
+}
+
+/* adding responsivness */
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 27%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .section {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    width: 100%;
+    /* justify-content: center; */
+  }
+}
